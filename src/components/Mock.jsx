@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import axios from 'axios'
 
@@ -11,20 +12,20 @@ class Mock extends React.Component {
          };
     }
 
-    getDate1 = () =>{
+    getDate1 = () => {
         axios.get('/getdata1', {
             params:{
                 id : '123'
             }
         })
         .then((res)=>{
-            console.log(res.data)
+            //console.log(res.data)
             this.setState({
                 gData: res.data.message
             })
         })
         .catch((err)=>{
-            console.log(err)
+            //console.log(err)
         })
     }
 
@@ -35,13 +36,13 @@ class Mock extends React.Component {
             }
         })
         .then((res)=>{
-            console.log(res.data)
+            //console.log(res.data)
             this.setState({
                 pData: res.data.message
             })
         })
         .catch((err)=>{
-            console.log(err)
+           // console.log(err)
         })
     }
 

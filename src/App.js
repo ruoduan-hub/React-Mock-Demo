@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import Mock from './components/Mock'
 import HookMock from './components/Hook-Mock'
